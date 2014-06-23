@@ -2,7 +2,27 @@
 @import 'bourbon/bourbon';
 @import 'neat/neat';
 
-container{
+.container{
 @include outer-container;
+background-color:black;
+max-width: 68em;
+margin-left: auto;
+margin-right: auto;
+background-color: black;
+height: 300px;
 }
 
+.column-a{
+@include span-columns(6);
+background-color:grey;
+height: 300px;
+}
+.column-b{
+@include span-columns(4);
+float: right;
+display: block;
+margin-right: 2.3576515979%;
+width: 31.7615656014%;
+background-color: blanchedalmond;
+height: 300px;
+}
